@@ -1,15 +1,20 @@
 # Additional Practice: Woof Woof Welcome to Doggo Bark Bark
 
-THIS GOOD APPLICATION FOR LOOKING AT DOGS BOW WOW.
+This application is for looging at GOOD DOGS BOW WOW.
 
-WHEN LOOKING AT PUP PUPS USER SHOULD BE ABLE TO:
+## Core Deliverables:
 
- - CLICK ON DOGS IN THE DOG BAR TO SEE MORE INFO ABOUT THE GOOD PUPPER;
-   - MORE INFO INCLUDES A DOG PIC, A DOG NAME, AND A DOG BUTTON THAT INDICATES
-     WHETHER IT IS A GOOD DOG OR A BAD DOG;
- - CLICK ON GOOD DOG/BAD DOG BUTTON IN ORDER TO TOGGLE PUP GOODNESS;
- - CLICK ON "FILTER GOOD DOGS" BUTTON IN ORDER TO JUST SEE GOOD DOGS OR SEE
-   ALL DOGS IN DOG BAR.
+When looking at PUP PUPS, the user should be able to:
+
+1) See a list of all the dogs in the database
+2) Click on a dog in the dog bar to see more info about that dog
+ - "More info" includes a dog pic, a dog name, and a dog button that indicates whether it is a good dog or a bad dog
+3) Click on good dog/bad dog button in order to toggle pup goodness - *no persistence needed*
+
+## Advanced Deliverables:
+
+4) When a user sets good/bad, store the setting in the database (requires PATCH)
+5) Click on "filter good dogs" button in order to just see good dogs or see all dogs in dog bar.
 
 ## EXAMPLE:
 ![Showcasing the full functionality](https://curriculum-content.s3.amazonaws.com/phase-1/woof-woof-js-practice/woof-woof-demo.gif)
@@ -48,7 +53,8 @@ When you have the pup's information, the dog info `div` should have the followin
  When a user clicks the Good Dog/Bad Dog button, two things should happen:
  
   - The button's text should change from Good to Bad or Bad to Good
-  - The corresponding pup object in the database should be updated to reflect the new isGoodDog value
+
+  - *For the advanced deliverable*, the corresponding pup object in the database should be updated to reflect the new isGoodDog value
     - Please note, you can update a dog by making a PATCH request to `/pups/:id`
 
 ### BONUS! STEP 5: FILTER GOOD DOGS 
